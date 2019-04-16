@@ -8,8 +8,8 @@ int main(){
 	
 	//register int num2 = num1;  //a value of an object with automatic storage duration is used while it is indeterminate
 
-	int num1;
-	int num2 = num1;
+	register int num1;
+	register int num2 = num1;
 
 	printf("num1 = %d \n", num1);
 	printf("num2 = %d \n", num2);

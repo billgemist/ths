@@ -3,7 +3,7 @@
 
 int main(){
 
-	register int arr[4] = {90,91,92,93};
+	int arr[4] = {90,91,92,93};
 	int *parr = arr;
 
 	printf("parr = %d \n", *parr);

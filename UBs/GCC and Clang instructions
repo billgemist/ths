@@ -1,0 +1,21 @@
+#### GCC #####
+$ gcc ub42.c 
+$ ./a.out
+or
+$ gcc ub42.c -o gc
+$ ./ub
+$ gcc -fsanitize=undefined ub_.c -o gc
+
+----
+
+
+#### Clang #####
+$ clang ub42.c 
+$ ./a.out
+or
+$ clang ub42.c -o cl
+$ ./ub
+$ clang -fsanitize=undefined ub42.c -o clcpm 
+
+#### FRAMA - C ####
+frama-c-gui -slevel 10 -val ub42.c

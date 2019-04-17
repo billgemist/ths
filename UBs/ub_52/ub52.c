@@ -1,10 +1,12 @@
 //undefined behavior number 52
 #include <stdio.h>
 
+int arr[var] = 0;
+
 int main(){
 
-	int i=0;
-    i = 7 + 2.0;
+	int var = 0;
+    
 
     printf("%d\n", i);
     

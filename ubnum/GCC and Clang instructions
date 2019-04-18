@@ -6,6 +6,8 @@ $ gcc ub42.c -o gc
 $ ./ub
 $ gcc -fsanitize=undefined ub_.c -o gc
 
+Syntax
+$ gcc -Olevel [options] [source files] [object files] [-o output file]
 
 #### Clang #####
 $ clang ub42.c 

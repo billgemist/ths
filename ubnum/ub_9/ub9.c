@@ -1,14 +1,24 @@
-//undefined behavior number 9
+//undefined behavior number 9 - similar to number 8
 #include <stdio.h>
 #include <stdlib.h>
 
+int* fun(int varMain){
+
+	int varFun = 0;
+	varFun = varMain + 10;
+
+	return &varFun;
+
+}
+
+
+
 int main(){
-	char *p = malloc(5);
-	free(p);
 
-	if (p == NULL){
-		printf("null \n");
-	}
+	int *ptr;
 
+	ptr = fun(10);
+	*ptr = *ptr + 1;
+	
 	return 0;
 }

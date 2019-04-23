@@ -29,7 +29,9 @@ gcc -Wall -Werror -std=c99 -fsanitize=undefined -pedantic FILE.C -o OUTPUT_NAME
 
 clang -Wall -Werror -std=c99 -fsanitize=undefined -pedantic FILE.C -o OUTPUT_NAME
 
-icc -Wall -Werror -std=c99 -fsanitize=undefined -pedantic FILE.C -o OUTPUT_NAME
+icc -Wall -Werror -std=c99 -pedantic FILE.C -o OUTPUT_NAME
+
+on icc the -fsanitize doesn't work!
 
 
 #### FRAMA - C ####

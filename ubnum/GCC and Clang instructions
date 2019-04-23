@@ -25,6 +25,9 @@ $ clang -fsanitize=undefined ub42.c -o clcpm
 -Werror
 -pedantic
 
+gcc -Wall -Werror -std=c99 -fsanitize=undefined -pedantic FILE.C -o OUTPUT_NAME
+
+
 
 #### FRAMA - C ####
 frama-c-gui -slevel 10 -val ub42.c

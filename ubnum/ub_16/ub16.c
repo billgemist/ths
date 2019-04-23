@@ -5,7 +5,8 @@
 
 int main(){
 
-	double a = FLT_MAX + 1;
+	//double a = FLT_MAX ^ 2; // when compiles throws an error see picture 
+	double a = FLT_MAX * 2;
 	float b = (float) a;
 
 	printf("a: %f\n", a);

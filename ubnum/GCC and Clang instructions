@@ -27,6 +27,9 @@ $ clang -fsanitize=undefined ub42.c -o clcpm
 
 gcc -Wall -Werror -std=c99 -fsanitize=undefined -pedantic FILE.C -o OUTPUT_NAME
 
+clang -Wall -Werror -std=c99 -fsanitize=undefined -pedantic FILE.C -o OUTPUT_NAME
+
+icc -Wall -Werror -std=c99 -fsanitize=undefined -pedantic FILE.C -o OUTPUT_NAME
 
 
 #### FRAMA - C ####

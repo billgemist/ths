@@ -17,8 +17,8 @@ int main(){
 	*/
 
 
-	printf("var = %c\n", var);
-	printf("AAA = %c\n", aaa);
+	//printf("var = %c\n", var);
+	//printf("AAA = %c\n", aaa);
     
 	return 0;
 }

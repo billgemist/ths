@@ -9,13 +9,13 @@ int main(){
     int *p = &b;
 
     printf("*p = %d\n", *p);
-    printf("p num address = %p\n", p);
+    printf("p points address = %p\n", p);
     printf("p address = %p\n", &p);
 
     printf("------------------\n");
 
     printf("*g = %d\n", *g);
-    printf("g num address = %p\n", g);
+    printf("g points address = %p\n", g);
     printf("g address = %p\n", &g);
 
 printf("------------------\n");

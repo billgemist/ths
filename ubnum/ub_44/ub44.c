@@ -11,14 +11,11 @@ int main(){
 
 	char var = *ptr; //undefined behavior number 44
 
-	char aaa = 'F';
 	/*
 	*** Disclosure: The printf's will be removed in the test it is just for mine convinience!
 	*/
 
-
 	//printf("var = %c\n", var);
-	//printf("AAA = %c\n", aaa);
     
 	return 0;
 }

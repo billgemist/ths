@@ -17,11 +17,11 @@ int main(){
 	*** Disclosure: The printf's will be removed in the test it is just for mine convinience!
 	*/
 
-	printf("1 = %s\n", ptr1);
-	printf("2 = %s\n", ptr2);
-	printf("3 = %s\n", ptr3);
-	printf("4 = %s\n", ptr4);
-	printf("5 = %c\n", *ptr5);
+	//printf("1 = %s\n", ptr1);
+	//printf("2 = %s\n", ptr2);
+	//printf("3 = %s\n", ptr3);
+	//printf("4 = %s\n", ptr4);
+	//printf("5 = %c\n", *ptr5);
     
 	return 0;
 }

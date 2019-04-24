@@ -1,4 +1,4 @@
-//undefined behavior number tade
+//undefined behavior number 71
 #include <stdio.h>
 
 int foo (int arr[static 10]){

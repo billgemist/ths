@@ -25,13 +25,20 @@ $ clang -fsanitize=undefined ub42.c -o clcpm
 -Werror
 -pedantic
 
-gcc -Wall -Werror -std=c99 -fsanitize=undefined -pedantic FILE.C -o OUTPUT_NAME
+Each compiler will test it with all opt levels and see if -O0 is like no opt flag:
 
-clang -Wall -Werror -std=c99 -fsanitize=undefined -pedantic FILE.C -o OUTPUT_NAME
+***GCC***
+1) gcc -Wall -Werror -std=c99 -fsanitize=undefined -pedantic FILE.C -o OUTPUT_NAME
+2) gcc -O0/O1/O2/O3 -Wall -Werror -std=c99 -fsanitize=undefined -pedantic FILE.C -o OUTPUT_NAME
 
-icc -Wall -Werror -std=c99 -pedantic FILE.C -o OUTPUT_NAME
+***CLANG***
+1) clang -Wall -Werror -std=c99 -fsanitize=undefined -pedantic FILE.C -o OUTPUT_NAME
+2) clang -O0/O1/O2/O3 -Wall -Werror -std=c99 -fsanitize=undefined -pedantic FILE.C -o OUTPUT_NAME
 
+***INTEL***
+1)icc -Wall -Werror -std=c99 -pedantic FILE.C -o OUTPUT_NAME
 on icc the -fsanitize doesn't work!
+2) icc -O0/O1/O2/O3 -Wall -Werror -std=c99 -pedantic FILE.C -o OUTPUT_NAME
 
 
 #### FRAMA - C ####

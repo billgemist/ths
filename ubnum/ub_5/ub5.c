@@ -9,9 +9,9 @@ int main(){
  
 	//int sum = val + var;
 
-	//printf("val = %d\n", val);
-	//printf("var = %d\n", var);
-	//printf("sum = %d\n", sum);
-    
+	//printf("val = %d\n", val); //printf will be removed...
+	//printf("var = %d\n", var); //printf will be removed...
+	//printf("sum = %d\n", sum); //printf will be removed...
+     
 	return 0;
 }

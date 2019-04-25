@@ -16,7 +16,7 @@ int main(){
 		long var = 1; 
 	}
 
-	printf("%ld\n", var);
+	printf("%ld\n", var); //printf will be removed...
 
 	return 0;
 }

@@ -11,7 +11,7 @@ int main(){
 	
 	int gamma = foo(2, 4);
     
-	printf("gamma = %d \n", gamma);
+	printf("gamma = %d \n", gamma); //printf will be removed...
 
 	return 0;
 }

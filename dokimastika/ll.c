@@ -8,15 +8,15 @@ int main(){
     int *g = &i;
     int *p = &b;
 
-    printf("*p = %d\n", *p);
-    printf("p points address = %p\n", p);
-    printf("p address = %p\n", &p);
+    printf("the value of p is = %d\n", *p);
+    printf("the address of object that p points into = %p\n", (void *) p);
+    printf("p address is = %p\n", (void *) &p); //The argument shall be a pointer to void 
 
     printf("------------------\n");
 
-    printf("*g = %d\n", *g);
-    printf("g points address = %p\n", g);
-    printf("g address = %p\n", &g);
+    printf("the value of g is = %d\n", *g);
+    printf("the address of object that g points into = %p\n", (void *) g);
+    printf("g address is = %p\n", (void *) &g);
 
 printf("------------------\n");
 
@@ -25,3 +25,6 @@ printf("------------------\n");
     
 	return 0;
 }
+
+
+/*https://stackoverflow.com/questions/5286451/how-to-print-variable-addresses-in-c*/

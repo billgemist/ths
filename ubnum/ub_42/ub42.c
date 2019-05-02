@@ -1,3 +1,4 @@
+//undefined behavior number 42
 #include <stdio.h>
 int main (){
 

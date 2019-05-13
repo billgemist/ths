@@ -5,13 +5,14 @@
 int main(){
 	
 	char str[] = "is this undefined behavior number 30?";
-
+	printf("str = %s\n", str);
 	str[2] = 'L'; //invokes undefined behavior
 	
 	if(str[2] == 'L'){
-		//printf("%s\n", str);
-		printf("Apparently it is not!\n");
+
+		printf("str = %s\n", str);
 	}
 	
 	return 0;
 }
+

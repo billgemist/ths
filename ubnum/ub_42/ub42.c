@@ -8,12 +8,12 @@ int main (){
     for(int i = 5; i >= 0; i--){
         n = n * i;
         b = n/n;
-        printf ("n = %d \n", n);
-        printf("b = %d \n", b);
-        printf ("i = %d \n", i);
-        printf ("###################\n");
+        if(n == 0)
+            printf("n = %d, b(n/n) = %d\n", n, b);
     }
     
     return 0;
 
 }
+
+

@@ -9,8 +9,7 @@ int main(){
 
 	int b = arr[0][7];
 
-
-
+	printf("%d\n", b);
 
 	return 0;
 }

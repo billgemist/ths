@@ -15,7 +15,7 @@ int main(){
 	*** Disclosure: The printf's will be removed in the test it is just for mine convinience!
 	*/
 
-	//printf("var = %c\n", var);
+	printf("var = %c\n", var);
     
 	return 0;
 }

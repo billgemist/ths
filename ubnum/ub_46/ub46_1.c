@@ -9,7 +9,7 @@ int main(){
 
 	int b = arr[6];
 
-	//printf("%d\n", b);
+	printf("%d\n", b);
 
 
 	return 0;

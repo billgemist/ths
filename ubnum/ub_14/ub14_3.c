@@ -13,10 +13,11 @@ int main(){
 	int c = foo(var);
 
 	if(c > 10){
-		long var = 1; 
+		long var = 1.0;
+		printf("%ld\n", var);
 	}
 
-	printf("%ld\n", var); //printf will be removed...
+	printf("%d\n", var); //printf will be removed...
 
 	return 0;
 }

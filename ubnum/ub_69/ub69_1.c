@@ -8,14 +8,17 @@ void func(int n){
 }
 
 int main(){
-	int given;
-	printf("please enter a integer value: ");
-	scanf("%d", &given);
-
-	func(given); //if given <= 0, then the behavior is undefined as standard say
-
+	int given=0;
+	while(given != 22){ //22 for ending
+		printf("please enter a integer value: ");
+		scanf("%d", &given);
+		if(given != 22)
+			func(given); //if given <= 0, then the behavior is undefined as standard say
+	}
 	return 0;
 }
+
+
 
 /*
 Tested Examples

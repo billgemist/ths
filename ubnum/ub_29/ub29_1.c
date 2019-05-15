@@ -1,4 +1,6 @@
 //undefined behavior number 29
+//example of how __func__ works
+
 #include <stdio.h>
 
 void myFunction(){

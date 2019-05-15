@@ -13,14 +13,14 @@ int main(){
 	
 
 	int arr[3] = {1, 24, 810};
-	int c;
+	int c = 23;
 
-	printf("Enter a value: ");
-    scanf("%d", &c);
+	//printf("Enter a value: ");
+    //scanf("%d", &c);
 	
 	int val = func(arr, sizeof(arr), c);
 
-	printf("%d\n", val); //will be removed
+	printf("return of func() = %d\n", val); //will be removed
 
 	return 0;
 }

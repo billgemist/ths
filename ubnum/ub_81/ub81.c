@@ -4,7 +4,7 @@
 void fun(int a, ...)
 	int a;
 {
-
+	printf("%d\n", a);
 }
 
 int main(){

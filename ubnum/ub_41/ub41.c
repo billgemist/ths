@@ -6,5 +6,7 @@ int main(){
 	int *ptr = &a;
     
 	double dbl = (double) ptr;
+
+    printf("%f\n", dbl);
 	return 0;
 }

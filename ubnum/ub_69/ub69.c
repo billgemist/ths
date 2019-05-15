@@ -1,16 +1,19 @@
 //undefined behavior number 69
 #include <stdio.h>
 
-void func(int n){
-	int arr[n];
-
+int func(int n){
+	int arr[n]; //undefined
+	return (sizeof(arr));
 }
 
 int main(){
 	
-	func(1); //defined
-	func(0); //undefined
-	func(-10); //undefined
+	
+	printf("func(0) = %d\n", func(0)); //undefined
+	printf("func(-10) = %d\n", func(-10)); //undefined
+
+	//func(1); //defined
+	//func(-10); //undefined
 
 	return 0;
 }

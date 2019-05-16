@@ -1,4 +1,6 @@
 //undefined behavior number 59
+//example of Carnegie-Mellon https://wiki.sei.cmu.edu/confluence/display/c/ARR30-C.+Do+not+form+or+use+out-of-bounds+pointers+or+array+subscripts#ARR30-C.Donotformoruseout-of-boundspointersorarraysubscripts-PointerPastFlexibleArrayMember
+//same with ub59_1 that's why not tested
 #include <stdio.h>
 #include <stdlib.h>
   
@@ -26,6 +28,7 @@ int main(void) {
   }
   s->len = 0;
   find(s, 'a');
+  free(s);
   return 0;
 }
 

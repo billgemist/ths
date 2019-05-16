@@ -11,6 +11,7 @@ int *find(struct book *tst, int f){
 	int *first = tst->isbn;
 	int *last = tst->isbn+0;
 
+	printf("%d\n", *first++); //crashes here
 	while(first++ != last){ // undefined behavior
 		if(*first == f){
 			return first;
@@ -20,14 +21,20 @@ int *find(struct book *tst, int f){
 }
 
 int main(){
-	
+	int *ptr;
 	struct book *tst = (struct book *)malloc(sizeof(struct book));
 	if(tst == NULL){
 		printf("ERROR\n");
 		return 1;
 	}
-	find(tst, 10);
-
+	ptr = find(tst, 10);
+	if(ptr != NULL){
+		printf("ptr = %d\n", *ptr);	
+	}
+	else{
+		printf("returned null\n");
+	}
+	free(tst);
 	return 0;
 }
 

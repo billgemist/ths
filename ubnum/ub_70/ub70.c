@@ -1,4 +1,4 @@
-//undefined behavior number tade
+//undefined behavior number 70
 #include <stdio.h>
 
 void func(int n){

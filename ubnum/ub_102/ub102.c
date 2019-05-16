@@ -18,6 +18,7 @@ int main () {
 	//undefined section
 	char *ptr = NULL;
 	val = atoi(ptr);
+   //printf("3rd val: %d\n", val);
 
 	//int a = 10;
 	//val = atoi(a);

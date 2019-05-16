@@ -9,7 +9,7 @@ int *loop_function(void *v_pointer) {
   
 void func(char *char_ptr) {
   int *int_ptr = loop_function(char_ptr);
- 
+	printf("%c\n", *int_ptr); /*if this printf is not commented out the FSAN tool throws and error*/
 }
 
 

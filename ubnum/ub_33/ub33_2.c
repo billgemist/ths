@@ -6,14 +6,19 @@
 
 int fun(int x){
 	if(x<0) x = -x;
-	return x >= 0;
+	/*if (x<0){
+		printf("mesa stin if: x =  %d, (-x) = \n", x, (-x) );
+		x = -x;
+	}*/
+	return x >= 0; /*1T, 0F */
 }
 
 int main(){
-    
+
 	printf("%d\n", -INT_MIN);
 	printf("%d\n", fun(INT_MIN));
 
 
 	return 0;
 }
+

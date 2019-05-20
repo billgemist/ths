@@ -12,7 +12,7 @@ void remove_spaces(const char *str, size_t slen) {
         printf("%c",*p++);
   *p = '\0';
 }
-
+//
 
 int main(){
 

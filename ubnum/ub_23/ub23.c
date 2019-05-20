@@ -17,3 +17,5 @@ int main() {
 /* In this noncompliant example, the C standard library function strchr() is called through 
 the function pointer fp declared with a prototype with incorrectly typed arguments. 
 According to the C Standard, 6.3.2.3, paragraph 8 */
+
+

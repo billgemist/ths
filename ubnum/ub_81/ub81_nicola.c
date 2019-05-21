@@ -1,7 +1,7 @@
 //undefined behavior number 81
 #include <stdio.h>
 
-static void func(int a, ...);
+static void fun(int a, ...);
 
 void fun(int a, int b, int c)
 {

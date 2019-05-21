@@ -6,7 +6,7 @@ int main(){
 	auto int num1;
 	auto int num2;  //a value of an object with automatic storage duration is used while it is indeterminate
 
-	int a = 7;
+	int a = 1;
 
 	while (a > 0){
 

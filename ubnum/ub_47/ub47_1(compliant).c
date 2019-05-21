@@ -17,7 +17,7 @@ int main(){
 
 	//printf("ptr1 = %d \n", *ptr1);
 	//printf("ptr2 = %d \n", *ptr2);
-	//printf("pdiff = %ld \n", pdiff);
+	printf("pdiff = %ld \n", pdiff);
 
 	return 0;
 }

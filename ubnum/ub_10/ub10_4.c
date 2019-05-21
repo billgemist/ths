@@ -3,27 +3,21 @@
 
 int main(){
 
-	int N,M = 1;
+  int N,M = 0;
 
+  printf("M = %d\n", M);
+  printf("N = %d\n", N);
 
- 	int uv=0;
+  if(M == 0){
+    M = 1;
+    N = 6;
+    printf("inside 1st if, M = %d, N = %d\n", M, N);
+  }
 
-    //printf("Please input an integer value: ");
-    //scanf("%d", &uv);
+  if(M != 0){
+    int k;
+    printf("inside 2nd if, k = %d\n", k);
+  }
 
-    printf("uv = %d\n", uv);
-    printf("M = %d\n", M);
-    printf("N = %d\n", N);
-
-    if(uv != 0){
-    	M = 20;
-    	printf("inside 1st if, M = %d\n", M);
-    }
-
-    if(M != 1){
-    	N = 40;
-		printf("inside 2nd if, N = %d\n", N);
-    }
-
-	return 0;
+  return 0;
 }

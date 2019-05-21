@@ -5,6 +5,7 @@
 int main(){
 
 	int a = sizeof (struct { int a:((int) (5/3.14f));});
+	printf("%d\n", a);
     
 	return 0;
 }

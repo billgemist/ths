@@ -6,7 +6,7 @@ struct grades{
 	int math;
 	int physics;
 	int literature;
-	struct grades gt;
+	struct grades gt; //incomplete type
 };
 
 

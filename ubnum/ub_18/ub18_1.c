@@ -16,5 +16,8 @@ int main(){
    	printf("size of b = %d\n", sb); //printf will be removed...
 
 	return 0;
+	
 	}
+
+
 	

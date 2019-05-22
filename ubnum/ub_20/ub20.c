@@ -2,14 +2,14 @@
 #include <stdio.h>
 
 void foo(int alpha, int beta){
-	alpha = 2*beta;
+	alpha = alpha*beta;
 }
 
 
 
 int main(){
 	
-	int gamma = foo(2, 4);
+	int gamma = (int)foo(2, 4);
     
 	printf("gamma = %d \n", gamma); //printf will be removed...
 

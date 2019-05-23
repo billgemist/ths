@@ -1,4 +1,4 @@
-(* Frama-C journal generated at 10:18 the 21/05/2019 *)
+(* Frama-C journal generated at 12:42 the 23/05/2019 *)
 
 exception Unreachable
 exception Exception of string
@@ -6,7 +6,7 @@ exception Exception of string
 [@@@ warning "-26"]
 
 (* Run the user commands *)
-let run () = ()
+let run () = Project.set_keep_current false; File.init_from_cmdline (); ()
 
 (* Main *)
 let main () =

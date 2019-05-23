@@ -1,4 +1,4 @@
-(* Frama-C journal generated at 10:16 the 21/05/2019 *)
+(* Frama-C journal generated at 12:43 the 23/05/2019 *)
 
 exception Unreachable
 exception Exception of string
@@ -6,7 +6,68 @@ exception Exception of string
 [@@@ warning "-26"]
 
 (* Run the user commands *)
-let run () = ()
+let run () =
+  Dynamic.Parameter.Int.set "-eva-slevel" 20;
+  Dynamic.Parameter.Bool.set "-eva" true;
+  Dynamic.Parameter.String.set "" "ub4.c";
+  File.init_from_cmdline ();
+  !Db.Value.compute ();
+  Project.set_keep_current false;
+  let __ = Callgraph.Cg.get () in
+  let __ = Callgraph.Cg.get () in
+  Project.clear
+    ~selection:(State_selection.of_list
+                  [ State.get "Report.print_once";
+                    State.get "Report.print_csv_once";
+                    State.get "Report.classify_once";
+                    State.get "Property_status.Consolidated_status";
+                    State.get "Consolidation graph" ])
+    ~project:(Project.from_unique_name "default")
+    ();
+  Project.clear
+    ~selection:(State_selection.of_list
+                  [ State.get "Report.print_once";
+                    State.get "Report.print_csv_once";
+                    State.get "Report.classify_once";
+                    State.get "Property_status.Consolidated_status";
+                    State.get "Consolidation graph" ])
+    ~project:(Project.from_unique_name "default")
+    ();
+  Project.clear
+    ~selection:(State_selection.of_list
+                  [ State.get "Report.print_once";
+                    State.get "Report.print_csv_once";
+                    State.get "Report.classify_once";
+                    State.get "Property_status.Consolidated_status";
+                    State.get "Consolidation graph" ])
+    ~project:(Project.from_unique_name "default")
+    ();
+  Project.clear
+    ~selection:(State_selection.of_list
+                  [ State.get "Report.print_once";
+                    State.get "Report.print_csv_once";
+                    State.get "Report.classify_once";
+                    State.get "Property_status.Consolidated_status";
+                    State.get "Consolidation graph" ])
+    ~project:(Project.from_unique_name "default")
+    ();
+  Project.clear
+    ~selection:(State_selection.of_list
+                  [ State.get "Report.print_once";
+                    State.get "Report.print_csv_once";
+                    State.get "Report.classify_once";
+                    State.get "Property_status.Consolidated_status";
+                    State.get "Consolidation graph" ])
+    ();
+  Project.clear
+    ~selection:(State_selection.of_list
+                  [ State.get "Report.print_once";
+                    State.get "Report.print_csv_once";
+                    State.get "Report.classify_once";
+                    State.get "Property_status.Consolidated_status";
+                    State.get "Consolidation graph" ])
+    ();
+  ()
 
 (* Main *)
 let main () =

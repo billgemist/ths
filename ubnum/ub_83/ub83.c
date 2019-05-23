@@ -1,4 +1,5 @@
 //undefined behavior number 83
+/*https://docs.microsoft.com/en-us/cpp/c-language/incomplete-types?view=vs-2019*/
 #include <stdio.h>
 
 int main(){
@@ -16,3 +17,4 @@ extern int i3 = 3;		   //definition, external linkage
 int i4;					   //tentative definition, external linkage 
 static int i5;				//tentative definition, internal linkage
 */
+

@@ -7,14 +7,7 @@ int fun (){
 
 
 int main(){
-	int var = {
-		if(fun()>0){
-			3;
-		}
-		else{
-			4;
-		}
-	};
+	int var = {4, 5};
 
 	printf("%d\n", var);
 

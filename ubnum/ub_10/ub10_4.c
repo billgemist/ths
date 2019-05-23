@@ -1,23 +1,24 @@
 //undefined behavior number 10
 #include <stdio.h>
-
+extern int is_prime(int num);
 int main(){
 
-  int N,M = 0;
+  int M = 5;
+  int N;
 
-  printf("M = %d\n", M);
-  printf("N = %d\n", N);
+  //printf("M = %d\n", M);
+  //printf("N = %d\n", N);
 
-  if(M == 0){
-    M = 1;
-    N = 6;
-    printf("inside 1st if, M = %d, N = %d\n", M, N);
+  if( is_prime(8)){
+    N = 10;
+    //printf("inside 1st if N = %d\n", N);
   }
 
-  if(M != 0){
-    int k;
-    printf("inside 2nd if, k = %d\n", k);
+  if(is_prime(8)){ //diaforo tou miden
+    //printf("second if. N = %d \n", N);
+    M = N;
   }
 
-  return 0;
+  return M;
 }
+

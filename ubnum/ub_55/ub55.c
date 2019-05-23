@@ -5,13 +5,12 @@ a pointer to an lvalue designating an object of static
 storage duration*/
 int main(){
 	
-	static int a = 10;
+	int a[5];
 
-	int *ptr = &a;
-
-	int b = *ptr;
-
-	printf("b: %d\n", b);
+	a[2] = 6;
+	3[a] = 7; 
     
+	printf("%d\n", a[3]);
+
 	return 0;
 }

@@ -1,7 +1,7 @@
 //undefined behavior number 63
 #include <stdio.h>
 
-const int fun (int a, int b){
+int volatile fun (int a, int b){
 	int sum = a + b;
 	return sum;
 }

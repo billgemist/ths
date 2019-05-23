@@ -1,6 +1,8 @@
 //undefined behavior number 61
 /*in this example value of "val" will change through pointer
-*without const type qualifier*/
+*without const type qualifier
+like this example -> url: https://wiki.sei.cmu.edu/confluence/display/c/EXP40-C.+Do+not+modify+constant+objects
+*/
 #include <stdio.h>
 
 

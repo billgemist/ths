@@ -3,7 +3,11 @@
 *ub61_2.c will change the value of "val" via pointer without const directly
 */
 #include <stdio.h>
-
+/*
+Function func() is passed a const pointer to int and then the 
+const is casted away, and then the content of the ptr is 
+modified 
+*/
 void func(const int *ptr){
 	int *f = (int *)ptr;
   *f = 123;

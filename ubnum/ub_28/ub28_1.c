@@ -1,22 +1,18 @@
 //undefined behavior number 28
+//idio me to ub28.c
 #include <stdio.h>
+//#include "ub28.h"
+extern int abcdefghijkjlmnopqrstuvwxyz12345_6a;
+extern int abcdefghijkjlmnopqrstuvwxyz12345_7b;
 int main(){
 	// in C99 translation limits section 5.2.4.1 
-	extern int global_symbol_definition_lookup_table_a; 
-	extern int global_symbol_definition_lookup_table_b;
-
-	int sum = global_symbol_definition_lookup_table_a + global_symbol_definition_lookup_table_b;
-
-
-	//printf("a = %d \n", a); //printf will be removed...
-	//printf("b = %d \n", b); //printf will be removed...
-
-
 	//int sum = abcdefghijkjlmnopqrstuvwxyA + abcdefghijkjlmnopqrstuvwxyz;
 	//int sum = abcd + abcD;
 
-	printf("sum = %d \n", sum); //printf will be removed...
-
+	printf("%d \n", abcdefghijkjlmnopqrstuvwxyz12345_6a); 
+	printf("%d \n", abcdefghijkjlmnopqrstuvwxyz12345_7b); //printf will be removed...
 
 	return 0;
 }
+
+

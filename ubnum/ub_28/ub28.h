@@ -1,7 +1,9 @@
 #ifndef fooheader  
 #define fooheader
 
-	extern int abcdefghijkjlmnopqrstuvwxyz123456; 
-	extern int abcdefghijkjlmnopqrstuvwxyz123457;
+	extern int abcdefghijkjlmnopqrstuvwxyz12345_6a; 
+	extern int abcdefghijkjlmnopqrstuvwxyz12345_7b;
 
 #endif 
+
+

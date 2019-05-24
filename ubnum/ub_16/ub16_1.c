@@ -1,4 +1,6 @@
 //undefined behavior number 16
+/*Carnegie Mellon: https://wiki.sei.cmu.edu/confluence/display/c/FLP34-C.+Ensure+that+floating-point+conversions+are+within+range+of+the+new+type
+"Narrowing Conversion"*/
 #include <stdio.h>
 #include <float.h>
 

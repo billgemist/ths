@@ -6,7 +6,7 @@ int main(){
 	
 	char str[] = "is this undefined behavior number 30?";
 	printf("str = %s\n", str);
-	str[2] = 'L'; //invokes undefined behavior
+	str[2] = 'L'; 
 	
 	if(str[2] == 'L'){
 

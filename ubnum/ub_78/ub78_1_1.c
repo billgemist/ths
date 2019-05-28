@@ -8,3 +8,6 @@ int main(){
     
 	return 0;
 }
+
+
+//tcc ub78_1_1.c ub78_1_2.c -o t

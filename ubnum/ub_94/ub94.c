@@ -6,7 +6,8 @@ int main(){
 	
 	/* test pending see: https://riptutorial.com/c/example/2150/copying-overlapping-memory */
 	
-	char str[19] = "This is an example";
+	//char str[19] = "This is an example";
+	char str[27] = "This is undefined behavior";
 
 	printf("before memcpy: %s\n", str); //printf will be removed
  
@@ -18,6 +19,6 @@ int main(){
 	return 0;
 	
 	
-	}
+}
 
 

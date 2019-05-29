@@ -1,4 +1,7 @@
 //undefined behavior number 23
+/*
+like example: https://wiki.sei.cmu.edu/confluence/display/c/EXP37-C.+Call+functions+with+the+correct+number+and+type+of+arguments
+*/
 #include <stdio.h>
 #include <string.h>
  

@@ -1,4 +1,7 @@
 //undefined behavior number 59
+/* like example
+https://wiki.sei.cmu.edu/confluence/display/c/ARR30-C.+Do+not+form+or+use+out-of-bounds+pointers+or+array+subscripts#ARR30-C.Donotformoruseout-of-boundspointersorarraysubscripts-PointerPastFlexibleArrayMember
+*/
 #include <stdio.h>
 #include <stdlib.h>
   

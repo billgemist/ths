@@ -1,4 +1,6 @@
 //undefined behavior number 22
+/*example like https://wiki.sei.cmu.edu/confluence/display/c/EXP36-C.+Do+not+cast+pointers+into+more+strictly+aligned+pointer+types
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>

@@ -4,7 +4,7 @@
 
 struct s {
 	int n;
-	double d[]; //flexible array 
+	double d[]; //flexible array member
 };
 
 int main(){
